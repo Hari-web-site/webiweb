@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+         $(window).on('scroll',function(){
+          if($(window).scrollTop()){
+              $(".navbar").addClass("active1");
+          }
+          else{
+              $(".navbar").removeClass("active1");
+          }
+         });
+         $("#form1").hide();
+           $("#btnn").click(function(){
+            $("#form1").show();
+           });
+           $("#close").click(function(){
+            $("#form1").hide();
+           });
+      });
+  </script>
+</head>
+<body>
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar1 sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="10%" style="border-radius: 50%;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Themes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="profile.html">Profile</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-danger" type="submit">Search</button>
+                  <i class="bi bi-people-fill btn btn-primary m-1 border rounded-circle" id="btnn"></i>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </navbar>
+
+    <main>
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center">
+          <h1 class="m-lg-5 text-primary">WebSites Catagories</h1>
+        </div>
+        <div class="row">
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/w1.JPG" class="card-img-top" alt="...">
+        <img src="img/w11.JPG" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">iEducation</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="#education" class="btn btn-primary">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/w2.JPG" class="card-img-top" alt="...">
+        <img src="img/w22.JPG" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Foods</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="#foods" class="btn btn-primary">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container-fluid" id="education">
+    <h1 class="text-center my-5 bg-danger text-white p-lg-2">Educational</h1>
+    <div class="container-fluid my-5">
+      <div class="row">
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/w1.JPG" class="card-img-top" alt="...">
+        <img src="img/w11.JPG" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Education</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="https://hari-web-site.github.io/i_education.github.io/" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container-fluid" id="foods">
+    <h1 class="text-center my-5 bg-primary text-white p-lg-2" >Foods</h1>
+    <div class="container-fluid my-5">
+      <div class="row">
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/w2.JPG" class="card-img-top" alt="...">
+        <img src="img/w22.JPG" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Foodies</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="https://hari-web-site.github.io/foodies/" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 10px 20px;">
+        <img src="img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Card title</h5>
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto.</p> -->
+          <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary" target="_blank">Check</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <sign class="">
+    <div class="container border border-info p-lg-5 profile1 my-2 toast show hari" id="form1">
+      <form>
+        <div class="toast-header">Registration Form
+        <button class="btn-close" data-bs-dismiss="toast" id="close"></button></div>
+        <div class="toast-body">
+        <span>Profile Photo</span>
+        <input type="file" name="" id="" class="my-2">
+        <span class="my-2">Username</span>
+        <input type="text" class="form-control">
+        <span class="my-2">Email</span>
+        <input type="email" class="form-control">
+        <span class="my-2">Password</span>
+        <input type="password" class="form-control">
+        <span class="my-2">Phone No</span>
+        <input type="number" class="form-control">
+        <button class="btn btn-info m-lg-2">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </sign>
+
+  <footer class="footer text-white">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="d-flex justify-content-center align-items-center foo">
+                <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column">
+
+                    <img src="img/logo.png" alt="" width="20%" class="my-2" style="border-radius: 50%;">
+                    <!-- <h1 class="text-center">Webi web</h1> -->
+                    <p class="ppl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque esse molestias enim nesciunt est optio velit, repellat corrupti, laudantium nam repellendus vitae at quis voluptas magnam dolorum aliquam maxime quo.</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h1>Our Services</h1>
+                    <h6>High Quality</h6>
+                    <h6>High Quality</h6>
+                    <h6>High Quality</h6>
+                    <h6>High Quality</h6>
+                    <h6>High Quality</h6>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h1>Contact With</h1>
+                    <i class="bi bi-whatsapp whats fa-2x m-2 cursor"></i>
+                    <i class="bi bi-instagram insta fa-2x m-2 cursor"></i>
+                    <i class="bi bi-facebook face fa-2x m-2 cursor"></i>
+                    <i class="bi bi-linkedin linked fa-2x m-2 cursor"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </main>
+</body>
+</html>

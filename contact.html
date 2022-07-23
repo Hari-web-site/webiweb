@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+           $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $(".navbar").addClass("active1");
+            }
+            else{
+                $(".navbar").removeClass("active1");
+            }
+           });
+           $("#form1").hide();
+           $("#btnn").click(function(){
+            $("#form1").show();
+           });
+           $("#close").click(function(){
+            $("#form1").hide();
+           });
+        });
+    </script>
+    <body>
+        <navbar>
+            <nav class="navbar navbar-expand-lg navbar1 sticky-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="10%" style="border-radius: 50%;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="theme.html">Themes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#" >Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="profile.html">Profile </a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-danger" type="submit">Search</button>
+                      <i class="bi bi-people-fill btn btn-primary m-1 border rounded-circle" id="btnn"></i>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </navbar>
+
+        <main>
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center align-items-center">
+                <h1 class="text-danger m-lg-3">About Me</h1>
+                </div>
+                <div class="container-fluid my-5 border border-danger rounded about">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/banner.jpg" alt="" width="20%" class="img1">
+                        <p class="pp1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quae reprehenderit at. Voluptatum tempore quaerat obcaecati recusandae. Doloribus, illum! Iste sapiente ut veniam perferendis, quod libero suscipit quas minima cupiditate voluptas nihil earum ad at doloremque accusamus reiciendis numquam provident unde nobis sed, omnis sint obcaecati. Eius sit non repudiandae voluptatem quisquam unde nemo vitae sed similique magni atque quaerat totam nulla, nesciunt excepturi animi ipsam eaque dolorem cum quibusdam obcaecati? Accusamus ex dicta impedit saepe beatae temporibus, iste et voluptates libero consequatur corporis similique numquam, sit illum maxime quia nulla ratione placeat nobis. Impedit, aspernatur vel! Quam obcaecati amet voluptate alias, recusandae consequuntur quo eos impedit sapiente. Odio soluta nihil libero dolorem, quos incidunt magnam perspiciatis doloribus quasi, assumenda nesciunt fugiat mollitia sit sunt similique repellat, dicta nisi vero veritatis accusamus consectetur debitis? Harum, deserunt, corporis nostrum nam maxime quo optio quod error esse et sint earum qui illo repellendus dolores reprehenderit ab modi debitis dolor. Esse, consequuntur eius nesciunt illum vero enim quam reprehenderit nam ex dicta, est consequatur iste minus sunt voluptatum pariatur fuga tempore temporibus iure qui obcaecati ipsa. Expedita minus fugiat tempore sint iste deleniti perspiciatis voluptatem consectetur nam sequi? Omnis temporibus id soluta recusandae.</p>
+                    </div>
+                </div>
+                <div class="container-fluid my-5 border border-success rounded about">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="pp1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quae reprehenderit at. Voluptatum tempore quaerat obcaecati recusandae. Doloribus, illum! Iste sapiente ut veniam perferendis, quod libero suscipit quas minima cupiditate voluptas nihil earum ad at doloremque accusamus reiciendis numquam provident unde nobis sed, omnis sint obcaecati. Eius sit non repudiandae voluptatem quisquam unde nemo vitae sed similique magni atque quaerat totam nulla, nesciunt excepturi animi ipsam eaque dolorem cum quibusdam obcaecati? Accusamus ex dicta impedit saepe beatae temporibus, iste et voluptates libero consequatur corporis similique numquam, sit illum maxime quia nulla ratione placeat nobis. Impedit, aspernatur vel! Quam obcaecati amet voluptate alias, recusandae consequuntur quo eos impedit sapiente. Odio soluta nihil libero dolorem, quos incidunt magnam perspiciatis doloribus quasi, assumenda nesciunt fugiat mollitia sit sunt similique repellat, dicta nisi vero veritatis accusamus consectetur debitis? Harum, deserunt, corporis nostrum nam maxime quo optio quod error esse et sint earum qui illo repellendus dolores reprehenderit ab modi debitis dolor. Esse, consequuntur eius nesciunt illum vero enim quam reprehenderit nam ex dicta, est consequatur iste minus sunt voluptatum pariatur fuga tempore temporibus iure qui obcaecati ipsa. Expedita minus fugiat tempore sint iste deleniti perspiciatis voluptatem consectetur nam sequi? Omnis temporibus id soluta recusandae.</p>
+                        <img src="img/banner.jpg" alt="" width="20%" class="img1">
+                    </div>
+                </div>
+                <div class="container-fluid my-5 border border-primary rounded about">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/banner.jpg" alt="" width="20%" class="img1">
+                        <p class="pp1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quae reprehenderit at. Voluptatum tempore quaerat obcaecati recusandae. Doloribus, illum! Iste sapiente ut veniam perferendis, quod libero suscipit quas minima cupiditate voluptas nihil earum ad at doloremque accusamus reiciendis numquam provident unde nobis sed, omnis sint obcaecati. Eius sit non repudiandae voluptatem quisquam unde nemo vitae sed similique magni atque quaerat totam nulla, nesciunt excepturi animi ipsam eaque dolorem cum quibusdam obcaecati? Accusamus ex dicta impedit saepe beatae temporibus, iste et voluptates libero consequatur corporis similique numquam, sit illum maxime quia nulla ratione placeat nobis. Impedit, aspernatur vel! Quam obcaecati amet voluptate alias, recusandae consequuntur quo eos impedit sapiente. Odio soluta nihil libero dolorem, quos incidunt magnam perspiciatis doloribus quasi, assumenda nesciunt fugiat mollitia sit sunt similique repellat, dicta nisi vero veritatis accusamus consectetur debitis? Harum, deserunt, corporis nostrum nam maxime quo optio quod error esse et sint earum qui illo repellendus dolores reprehenderit ab modi debitis dolor. Esse, consequuntur eius nesciunt illum vero enim quam reprehenderit nam ex dicta, est consequatur iste minus sunt voluptatum pariatur fuga tempore temporibus iure qui obcaecati ipsa. Expedita minus fugiat tempore sint iste deleniti perspiciatis voluptatem consectetur nam sequi? Omnis temporibus id soluta recusandae.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <h1 class="text-center bg-primary">Contact Us</h1>
+                <form method="post">
+                <div class="container p-lg-4">
+                    <input type="text" class="form-control my-2 border border-dark" placeholder="Name">
+                    <input type="text" class="form-control my-2 border border-dark" placeholder="E-mail">
+                    <input type="text" class="form-control my-2 border border-dark" placeholder="Phone">
+                    <textarea name="textarea" id="" rows="8" class="form-control border border-dark" placeholder="Description"></textarea>
+                    <button class="btn border border-dark m-2">Submit</button>
+                </div>
+                </form>
+            </div>
+        </main>
+
+        <sign class="">
+            <div class="container border border-info p-lg-5 profile1 my-2 toast show hari" id="form1">
+              <form>
+                <div class="toast-header">Registration Form
+                <button class="btn-close" data-bs-dismiss="toast" id="close"></button></div>
+                <div class="toast-body">
+                <span>Profile Photo</span>
+                <input type="file" name="" id="" class="my-2">
+                <span class="my-2">Username</span>
+                <input type="text" class="form-control">
+                <span class="my-2">Email</span>
+                <input type="email" class="form-control">
+                <span class="my-2">Password</span>
+                <input type="password" class="form-control">
+                <span class="my-2">Phone No</span>
+                <input type="number" class="form-control">
+                <button class="btn btn-info m-lg-2">Sign Up</button>
+                </div>
+              </form>
+            </div>
+          </sign>
+
+        <footer class="footer text-white">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="d-flex justify-content-center align-items-center foo">
+                      <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column">
+
+                          <img src="img/logo.png" alt="" width="20%" class="my-2" style="border-radius: 50%;">
+                          <!-- <h1 class="text-center">Webi web</h1> -->
+                          <p class="ppl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque esse molestias enim nesciunt est optio velit, repellat corrupti, laudantium nam repellendus vitae at quis voluptas magnam dolorum aliquam maxime quo.</p>
+                      </div>
+                      <div class="col-lg-3 text-center">
+                          <h1>Our Services</h1>
+                          <h6>High Quality</h6>
+                          <h6>High Quality</h6>
+                          <h6>High Quality</h6>
+                          <h6>High Quality</h6>
+                          <h6>High Quality</h6>
+                      </div>
+                      <div class="col-lg-3 text-center">
+                          <h1>Contact With</h1>
+                          <i class="bi bi-whatsapp whats fa-2x m-2 cursor"></i>
+                          <i class="bi bi-instagram insta fa-2x m-2 cursor"></i>
+                          <i class="bi bi-facebook face fa-2x m-2 cursor"></i>
+                          <i class="bi bi-linkedin linked fa-2x m-2 cursor"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    
+    </body>
+</head>
+</html>

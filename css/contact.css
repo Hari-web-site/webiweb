@@ -1,0 +1,63 @@
+.navbar1{
+    background-color: rgb(173, 233, 233);
+    transition: 1s ease;
+}
+.active1{
+    background-color: whitesmoke;
+}
+.img1{
+    border: 2px solid black;
+    border-radius: 10%;
+}
+.pp1{
+    text-align: justify;
+    margin: 10px 20px;
+}
+.about:hover{
+    box-shadow: 1px 1px 10px 1px rgb(218, 63, 135);
+}
+.hari{
+    position: fixed;
+    top: 80px;
+    left: 40%;
+}
+.footer{
+    /* background-image: url(footer1.png); */
+    background-color: rgb(105, 102, 102);
+    background-size: cover;
+    /* opacity: 0.3; */
+    width: auto;
+}
+.whats{
+    color: rgb(46, 228, 46);
+}
+.whats:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+.insta{
+    color: rgb(240, 74, 240);
+}
+.insta:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+.face{
+    color: rgb(58, 58, 228);
+}
+.face:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+.linked{
+    color: blue;
+}
+.linked:hover{
+    box-shadow: 1px 1px 10px 1px;
+}.ppl{
+    text-align: justify;
+}
+h6:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+.cursor{
+    cursor: pointer;
+}

@@ -1,0 +1,125 @@
+html{
+    scroll-behavior: smooth;
+}
+.banner{
+    height: 550px;
+    width: auto;
+    background-color: rgb(248, 195, 220);
+}
+.navbar1{
+    background-color: rgb(248, 195, 220);
+    transition: 1s ease;
+}
+.img1{
+    border: 2px solid black;
+    border-radius: 40%;
+}
+.hari{
+    position: fixed;
+    top: 80px;
+    left: 40%;
+}
+.pp1{
+    text-align: center;
+}
+.half{
+    margin-top: 150px;
+}
+.counter{
+    background-color: rgb(173, 233, 233);
+}
+.taxt-jusify{
+    text-align: justify !important;
+}
+.sc1{
+    transition: 2ms;
+}
+.sc1:hover{
+    box-shadow: 1px 1px 10px 1px cyan;
+}
+.cursor{
+    cursor: pointer;
+}
+.arrri{
+    color: rgb(39, 202, 202);
+    float: right;
+    cursor: pointer;
+}
+.footer{
+    /* background-image: url(footer1.png); */
+    background-color: rgb(105, 102, 102);
+    background-size: cover;
+    /* opacity: 0.3; */
+    width: auto;
+}
+.ppl{
+    text-align: justify;
+}
+h6:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+.whats{
+    color: rgb(46, 228, 46);
+}
+.whats:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+.insta{
+    color: rgb(240, 74, 240);
+}
+.insta:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+.face{
+    color: rgb(58, 58, 228);
+}
+.face:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+.linked{
+    color: blue;
+}
+.linked:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+.active1{
+    background-color: whitesmoke;
+}
+.card1{
+    display: none;
+}
+.box{
+    display: none;
+}
+.active2{
+    background-color: cyan;
+}
+.h6:hover{
+    color: black !important;
+}
+@media only screen and (max-width: 1000px){
+    .banner{
+        height: 900px;
+    }  
+    .img1{
+        margin-top: 25px;
+    }  
+    .sc1{
+        margin-top: 15px;
+    }
+    .foo{
+        display: flex;
+        flex-direction: column;
+    }
+    .carrd{
+        flex-direction: column;
+    }
+    .left{
+        display: none;
+    }
+    .card2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

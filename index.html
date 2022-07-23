@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+    <title>Webi Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+           $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $(".navbar").addClass("active1");
+            }
+            else{
+                $(".navbar").removeClass("active1");
+            }
+           });
+           $("#bbtn1").click(function(){
+            $("#bbtn1").addClass("active2");
+            $("#bbtn2").removeClass("active2");
+            $("#bbtn3").removeClass("active2");
+            $("#bbtn4").removeClass("active2");
+            $("#bbtn5").removeClass("active2");
+            $("#bbtn6").removeClass("active2");
+            $("#box1").show();
+            $("#box2").hide();
+            $("#box3").hide();
+            $("#box4").hide();
+            $("#box5").hide();
+            $("#box6").hide();
+           });
+           $("#bbtn2").click(function(){
+            $("#bbtn1").removeClass("active2");
+            $("#bbtn2").addClass("active2");
+            $("#bbtn3").removeClass("active2");
+            $("#bbtn4").removeClass("active2");
+            $("#bbtn5").removeClass("active2");
+            $("#bbtn6").removeClass("active2");
+            $("#box1").hide();
+            $("#box2").show();
+            $("#box3").hide();
+            $("#box4").hide();
+            $("#box5").hide();
+            $("#box6").hide();
+           });
+           $("#bbtn3").click(function(){
+            $("#bbtn1").removeClass("active2");
+            $("#bbtn2").removeClass("active2");
+            $("#bbtn3").addClass("active2");
+            $("#bbtn4").removeClass("active2");
+            $("#bbtn5").removeClass("active2");
+            $("#bbtn6").removeClass("active2");
+            $("#box1").hide();
+            $("#box2").hide();
+            $("#box3").show();
+            $("#box4").hide();
+            $("#box5").hide();
+            $("#box6").hide();
+           });
+           $("#bbtn4").click(function(){
+            $("#bbtn1").removeClass("active2");
+            $("#bbtn2").removeClass("active2");
+            $("#bbtn3").removeClass("active2");
+            $("#bbtn4").addClass("active2");
+            $("#bbtn5").removeClass("active2");
+            $("#bbtn6").removeClass("active2");
+            $("#box1").hide();
+            $("#box2").hide();
+            $("#box3").hide();
+            $("#box4").show();
+            $("#box5").hide();
+            $("#box6").hide();
+           });
+           $("#bbtn5").click(function(){
+            $("#bbtn1").removeClass("active2");
+            $("#bbtn2").removeClass("active2");
+            $("#bbtn3").removeClass("active2");
+            $("#bbtn4").removeClass("active2");
+            $("#bbtn5").addClass("active2");
+            $("#bbtn6").removeClass("active2");
+            $("#box1").hide();
+            $("#box2").hide();
+            $("#box3").hide();
+            $("#box4").hide();
+            $("#box5").show();
+            $("#box6").hide();
+           });
+           $("#bbtn6").click(function(){
+            $("#bbtn1").removeClass("active2");
+            $("#bbtn2").removeClass("active2");
+            $("#bbtn3").removeClass("active2");
+            $("#bbtn4").removeClass("active2");
+            $("#bbtn5").removeClass("active2");
+            $("#bbtn6").addClass("active2");
+            $("#box1").hide();
+            $("#box2").hide();
+            $("#box3").hide();
+            $("#box4").hide();
+            $("#box5").hide();
+            $("#box6").show();
+           });
+           $("#form1").hide();
+           $("#btnn").click(function(){
+            $("#form1").show();
+           });
+           $("#close").click(function(){
+            $("#form1").hide();
+           });
+        });
+    </script>
+</head>
+<body>
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar1 sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="immmg" width="10%" style="border-radius: 50%;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="theme.html">Themes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                  <i class="bi bi-people-fill btn btn-primary m-1 border rounded-circle" id="btnn"></i>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </navbar>
+
+    <main>
+        <div class="container-fluid banner">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="half">
+                    <div class="container d-flex flex-column justify-content-center align-items-center">
+                        <h1>Hello Dear</h1>
+                        <h6 class="h6">If you want to Buy or Purchase any type of website so you are on the great website</h6>
+                        <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium beatae eos, cum vitae corporis totam provident autem quos maxime dolores dignissimos amet dicta nihil explicabo voluptatum praesentium nemo qui sint voluptate animi? Suscipit molestiae, non numquam velit distinctio, aut illo id impedit nulla saepe adipisci sint libero voluptate accusantium dolor.</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                    <a href="https://youtube.com/" target="_blank"><button class="btn btn-success m-lg-2">Subscribe</button></a>
+                    <a href="theme.html"><button class="btn btn-primary m-lg-2">Purchase</button></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="img/banner.jpg" alt="" width="50%" class="img1 mt-lg-5">
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <counter>
+            <div class="container-fluid">
+                <div class="row counter py-lg-2">
+                    <div class="col-lg-2">
+                        <h5 class="text-center">Student</h5>
+                        <h5 class="text-center hhhh1" data-target="316" id="hhh1">12000+</h5>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-center">Developers</h5>
+                        <h5 class="text-center hhhh1" data-target="1004" id="hhh2">12000+</h5>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-center">placement</h5>
+                        <h5 class="text-center hhhh1" data-target="226" id="hhh3">12000+</h5>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-center">faith</h5>
+                        <h5 class="text-center hhhh1" data-target="4346" id="hhh4">12000+</h5>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-center">Languages</h5>
+                        <h5 class="text-center hhhh1" data-target="3546" id="hhh5">12000+</h5>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-center">Coding</h5>
+                        <h5 class="text-center hhhh1" data-target="2456" id="hhh6">12000+</h5>
+                    </div>
+                </div>
+            </div>
+        </counter>
+
+        <scaller>
+            <div class="container-fluid">
+                <div>
+                    <h1 class="text-center my-3">Services</h1>
+                </div>
+                <div class="row m-lg-5">
+                    <div class="col-lg-3 sc1 border border-dark rounded mx-lg-5">
+                        <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-calendar-heart fa-3x cursor"></i>
+                    </div>
+                        <h1 class="text-center">Quality</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam sequi voluptatem repudiandae, repellendus sed illo aut minima nulla expedita voluptas impedit animi magnam illum recusandae quasi veniam qui quaerat amet, totam est! Assumenda officiis architecto minima odit, commodi, laboriosam veritatis natus deleniti asperiores nesciunt ut adipisci autem nisi culpa!</p>
+                        <a href="https://youtube.com/" target="_blank"><i class="bi bi-arrow-right-circle-fill fa-2x arrri"></i></a>
+                    </div>
+                    <div class="col-lg-3 sc1 border border-dark rounded mx-lg-5">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="bi bi-hand-thumbs-up fa-3x cursor"></i>
+                        </div>
+                        <h1 class="text-center">Faith</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam sequi voluptatem repudiandae, repellendus sed illo aut minima nulla expedita voluptas impedit animi magnam illum recusandae quasi veniam qui quaerat amet, totam est! Assumenda officiis architecto minima odit, commodi, laboriosam veritatis natus deleniti asperiores nesciunt ut adipisci autem nisi culpa!</p>
+                        <a href="https://youtube.com/" target="_blank"><i class="bi bi-arrow-right-circle-fill fa-2x arrri"></i></a>
+                    </div>
+                    <div class="col-lg-3 sc1 border border-dark rounded mx-lg-5">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="bi bi-check-circle fa-3x cursor"></i>
+                        </div>
+                        <h1 class="text-center">Authenticate</h1>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam sequi voluptatem repudiandae, repellendus sed illo aut minima nulla expedita voluptas impedit animi magnam illum recusandae quasi veniam qui quaerat amet, totam est! Assumenda officiis architecto minima odit, commodi, laboriosam veritatis natus deleniti asperiores nesciunt ut adipisci autem nisi culpa!</p>
+                        <a href="https://youtube.com/" target="_blank"><i class="bi bi-arrow-right-circle-fill fa-2x arrri"></i></a>
+                    </div>
+                </div>
+            </div>
+        </scaller>
+
+
+        <div class="container-fluid">
+            <h1 class="bg-primary text-center text-danger p-lg-2 my-4">Developers</h1>
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center carrd">
+                    <div class="card m-lg-5 card2 col-lg-3 cardu" style="width: 18rem;">
+                        <img src="img/banner.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                          <h5 class="card-title">Card title</h5>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                      </div>
+                    <div class="card m-lg-5 card2 col-lg-3 cardu" style="width: 18rem;">
+                        <img src="img/logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                        </div>
+                      </div>
+                    <div class="card m-lg-5 card2 col-lg-3 cardu" style="width: 18rem;">
+                        <img src="img/logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                        </div>
+                      </div>
+                    <div class="card card1 cardu" style="width: 18rem;">
+                        <img src="img/logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                        </div>
+                      </div>
+                    <div class="card card1 cardu" style="width: 18rem;">
+                        <img src="img/logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                        </div>
+                      </div>
+                    <div class="card card1 cardu" style="width: 18rem;">
+                        <img src="img/logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="card-title">Card title</h5>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid ">
+            <h1 class="text-center p-lg-3 text-info">OUR FEATURES</h1>
+            <div class="container text-center p-lg-2">
+                <button class="btn btn-outline-info bbtn1 active2" id="bbtn1"></button>
+                <button class="btn btn-outline-info bbtn2" id="bbtn2"></button>
+                <button class="btn btn-outline-info bbtn3" id="bbtn3"></button>
+                <button class="btn btn-outline-info bbtn4" id="bbtn4"></button>
+                <button class="btn btn-outline-info bbtn5" id="bbtn5"></button>
+                <button class="btn btn-outline-info bbtn6" id="bbtn6"></button>
+            </div>
+        </div>
+        <div class="container-fluid box1" id="box1">
+            <div class="container border border-info rounded-2 p-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 my-5">
+                        <h1 class="text-center">Hello</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate alias, adipisci eveniet exercitationem esse soluta quia minus magnam est. Ut, nisi? Accusamus quasi repellat obcaecati molestias tempore nihil ipsam sequi ullam perferendis sed suscipit dolore, ipsum cumque ad magni debitis reiciendis maiores earum magnam assumenda officiis odit. Delectus, blanditiis?</p>
+                        <div class="d-flex justify-content-center align-items center">
+                        <button class="btn btn-outline-info m-lg-2"></button></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/logo1.png" alt="" class="border rounded-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid box" id="box2">
+            <div class="container border border-info rounded-2 p-lg-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/logo1.png" alt="" class="border rounded-2"></div>
+                    </div>
+                    <div class="col-lg-6 my-5">
+                        <h1 class="text-center">Hello</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate alias, adipisci eveniet exercitationem esse soluta quia minus magnam est. Ut, nisi? Accusamus quasi repellat obcaecati molestias tempore nihil ipsam sequi ullam perferendis sed suscipit dolore, ipsum cumque ad magni debitis reiciendis maiores earum magnam assumenda officiis odit. Delectus, blanditiis?</p>
+                        <div class="d-flex justify-content-center align-items center">
+                        <button class="btn btn-outline-info m-lg-2"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid box" id="box3">
+            <div class="container border border-info rounded-2 p-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 my-5">
+                        <h1 class="text-center">Hello</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate alias, adipisci eveniet exercitationem esse soluta quia minus magnam est. Ut, nisi? Accusamus quasi repellat obcaecati molestias tempore nihil ipsam sequi ullam perferendis sed suscipit dolore, ipsum cumque ad magni debitis reiciendis maiores earum magnam assumenda officiis odit. Delectus, blanditiis?</p>
+                        <div class="d-flex justify-content-center align-items center">
+                        <button class="btn btn-outline-info m-lg-2"></button></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/logo1.png" alt="" class="border rounded-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid box" id="box4">
+            <div class="container border border-info rounded-2 p-lg-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/logo1.png" alt="" class="border rounded-2"></div>
+                    </div>
+                    <div class="col-lg-6 my-5">
+                        <h1 class="text-center">Hello</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate alias, adipisci eveniet exercitationem esse soluta quia minus magnam est. Ut, nisi? Accusamus quasi repellat obcaecati molestias tempore nihil ipsam sequi ullam perferendis sed suscipit dolore, ipsum cumque ad magni debitis reiciendis maiores earum magnam assumenda officiis odit. Delectus, blanditiis?</p>
+                        <div class="d-flex justify-content-center align-items center">
+                        <button class="btn btn-outline-info m-lg-2"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid box" id="box5">
+            <div class="container border border-info rounded-2 p-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 my-5">
+                        <h1 class="text-center">Hello</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate alias, adipisci eveniet exercitationem esse soluta quia minus magnam est. Ut, nisi? Accusamus quasi repellat obcaecati molestias tempore nihil ipsam sequi ullam perferendis sed suscipit dolore, ipsum cumque ad magni debitis reiciendis maiores earum magnam assumenda officiis odit. Delectus, blanditiis?</p>
+                        <div class="d-flex justify-content-center align-items center">
+                        <button class="btn btn-outline-info m-lg-2"></button></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/logo1.png" alt="" class="border rounded-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid box" id="box6">
+            <div class="container border border-info rounded-2 p-lg-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/logo1.png" alt="" class="border rounded-2"></div>
+                    </div>
+                    <div class="col-lg-6 my-5">
+                        <h1 class="text-center">Hello</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate alias, adipisci eveniet exercitationem esse soluta quia minus magnam est. Ut, nisi? Accusamus quasi repellat obcaecati molestias tempore nihil ipsam sequi ullam perferendis sed suscipit dolore, ipsum cumque ad magni debitis reiciendis maiores earum magnam assumenda officiis odit. Delectus, blanditiis?</p>
+                        <div class="d-flex justify-content-center align-items center">
+                        <button class="btn btn-outline-info m-lg-2"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <sign class="">
+            <div class="container border border-info p-lg-5 profile1 my-2 toast show hari" id="form1">
+              <form>
+                <div class="toast-header">Registration Form
+                <button class="btn-close" data-bs-dismiss="toast" id="close"></button></div>
+                <div class="toast-body">
+                <span>Profile Photo</span>
+                <input type="file" name="" id="" class="my-2">
+                <span class="my-2">Username</span>
+                <input type="text" class="form-control">
+                <span class="my-2">Email</span>
+                <input type="email" class="form-control">
+                <span class="my-2">Password</span>
+                <input type="password" class="form-control">
+                <span class="my-2">Phone No</span>
+                <input type="number" class="form-control">
+                <button class="btn btn-info m-lg-2">Sign Up</button>
+                </div>
+              </form>
+            </div>
+          </sign>
+
+        
+        
+        <footer class="footer text-white">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="d-flex justify-content-center align-items-center foo">
+                        <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column">
+
+                            <img src="img/logo.png" alt="" width="20%" class="my-2" style="border-radius: 50%;">
+                            <!-- <h1 class="text-center">Webi web</h1> -->
+                            <p class="ppl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque esse molestias enim nesciunt est optio velit, repellat corrupti, laudantium nam repellendus vitae at quis voluptas magnam dolorum aliquam maxime quo.</p>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <h1>Our Services</h1>
+                            <h6>High Quality</h6>
+                            <h6>High Quality</h6>
+                            <h6>High Quality</h6>
+                            <h6>High Quality</h6>
+                            <h6>High Quality</h6>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <h1>Contact With</h1>
+                            <i class="bi bi-whatsapp whats fa-2x m-2 cursor"></i>
+                            <i class="bi bi-instagram insta fa-2x m-2 cursor"></i>
+                            <i class="bi bi-facebook face fa-2x m-2 cursor"></i>
+                            <i class="bi bi-linkedin linked fa-2x m-2 cursor"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+<script src="script/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+    <title>Webi Web</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+           $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $(".navbar").addClass("active1");
+            }
+            else{
+                $(".navbar").removeClass("active1");
+            }
+           });
+           $("#form1").hide();
+           $("#btnn").click(function(){
+            $("#form1").show();
+           });
+           $("#close").click(function(){
+            $("#form1").hide();
+           });
+        });
+    </script>
+</head>
+<body>
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar1 sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="10%" style="border-radius: 50%;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="theme.html">Themes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="profile.html">Profile</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                  <i class="bi bi-people-fill btn btn-primary m-1 border rounded-circle" id="btnn"></i>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </navbar>
+
+    <main>
+      <form action="#">
+        <div class="d-flex align-items-center justify-content-center flex-column">
+          <img src="img/logo.png" alt="" class="rounded-circle mt-5" width="250px">
+        <h4 class="mt-2">Hariom Bhagat</h4>
+        <p class="mx-5 my-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae dolor illo nihil voluptas qui illum excepturi vel hic libero nulla sequi consequuntur, voluptatum veritatis recusandae, ullam eius, quisquam saepe. Facilis dicta doloribus nisi assumenda nam. Delectus, dolor ipsum dolores tempora magnam, corporis libero illum officia temporibus cumque blanditiis enim commodi.</p>
+        </div>
+      </form>
+
+    </main>
+    <div class="container">
+    <table class="table border text-center">
+      <tr scope="row">
+          <td>Hariom Bhagat</td>
+          <td>9987654321</td>
+      </tr>
+      <tr scope="row">
+          <td>email@gmail.com</td>
+      </tr>
+  </table>
+</div>
+
+
+    <sign class="">
+      <div class="container border border-info p-lg-5 profile1 my-2 toast show hari" id="form1">
+        <form>
+          <div class="toast-header">Registration Form
+          <button class="btn-close" data-bs-dismiss="toast" id="close"></button></div>
+          <div class="toast-body">
+          <span>Profile Photo</span>
+          <input type="file" name="" id="" class="my-2">
+          <span class="my-2">Username</span>
+          <input type="text" class="form-control">
+          <span class="my-2">Email</span>
+          <input type="email" class="form-control">
+          <span class="my-2">Password</span>
+          <input type="password" class="form-control">
+          <span class="my-2">Phone No</span>
+          <input type="number" class="form-control">
+          <button class="btn btn-info m-lg-2">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </sign>
+
+
+</body>
+</html>
