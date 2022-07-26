@@ -98,7 +98,68 @@ h6:hover{
 .h6:hover{
     color: black !important;
 }
-@media only screen and (max-width: 1000px){
+.search{
+    margin-left: 200px;
+}
+@media screen and (max-width:575.98px) {
+
+    .banner{
+        height: 820px !important;
+    }
+    .counter{
+        padding: 10px;
+        gap: 10px;
+    }
+    .search{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-brand{
+        margin: 0;
+    }
+    .btnnn1{
+        margin: 10px;
+    }
+    .btnnn2{
+        margin: 10px;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .banner{
+        height: 960px;
+    }
+    .img1{
+        margin-top: 20px;
+    }
+    .sc1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .foo{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .ppl{
+        text-align: center;
+    }
+    .navbar-toggler{
+        margin-left: 150px;
+    }
+    .btnnn1{
+        margin: 10px;
+    }
+    .btnnn2{
+        margin: 10px;
+    }
+    .hari{
+        position: fixed;
+        top: 300px;
+        left: 200px;
+        padding: 20px;
+    }
+
+}
+/* @media only screen and (max-width: 1000px){
     .banner{
         height: 900px;
     }  
@@ -122,4 +183,4 @@ h6:hover{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-}
+} */
