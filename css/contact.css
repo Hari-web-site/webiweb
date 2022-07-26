@@ -5,6 +5,9 @@
 .active1{
     background-color: whitesmoke;
 }
+.search{
+    margin-left: 200px;
+}
 .img1{
     border: 2px solid black;
     border-radius: 10%;
@@ -60,4 +63,39 @@ h6:hover{
 }
 .cursor{
     cursor: pointer;
+}
+
+@media screen and (max-width:575.98px) {
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .img1{
+        width: 50%;
+    }
+    .about1{
+        background-color: skyblue;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .hari{
+        position: fixed;
+        top: 300px;
+        left: 200px;
+        padding: 20px;
+    }
+    .navbar-toggler{
+        margin-left: 150px;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .img1{
+        width: 30%;
+    }
+    .foo{
+        flex-direction: column;
+    }
 }
