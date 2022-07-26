@@ -13,6 +13,9 @@ html{
     top: 80px;
     left: 40%;
 }
+.search{
+    margin-left: 200px;
+}
 .card:hover{
     box-shadow: 1px 1px 10px 5px rgb(248, 195, 220);
     transition: 1 ease;
@@ -56,4 +59,33 @@ h6:hover{
 }
 .cursor{
     cursor: pointer;
+}
+@media screen and (max-width:575.98px) {
+    .ccard{
+        width: 31rem !important;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .hari{
+        position: fixed;
+        top: 300px;
+        left: 200px;
+        padding: 20px;
+    }
+    .navbar-toggler{
+        margin-left: 150px;
+    }
+    .foo{
+        flex-direction: column;
+    }
+    .ccard{
+        width: 21rem;
+    }
+    .cdcard{
+        width: 20rem !important;
+    }
+    .webcatt{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
