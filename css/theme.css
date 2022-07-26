@@ -62,7 +62,7 @@ h6:hover{
 }
 @media screen and (max-width:575.98px) {
     .ccard{
-        width: 28rem !important;
+        width: 28rem;
     }
 }
 @media screen and (max-width:767.98px) {
@@ -82,7 +82,7 @@ h6:hover{
         width: 21rem;
     }
     .cdcard{
-        width: 20rem !important;
+        width: 20rem;
     }
     .webcatt{
         margin-top: 20px;
